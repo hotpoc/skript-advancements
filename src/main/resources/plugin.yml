@@ -1,0 +1,7 @@
+name: skript-advancements
+version: 2.0
+main: me.hotpocket.skriptadvancements.SkriptAdvancements
+api-version: 1.16
+depend: [ Skript ]
+authors: [ hotpocket184 ]
+description: Allows you to manipulate advancements in Skript.
