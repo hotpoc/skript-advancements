@@ -1,0 +1,9 @@
+frames:
+  task: task
+  goal: goal
+  challenge: challenge
+
+visibilities:
+  visible: visible, shown
+  hidden: hidden, invisible
+  parent_granted: parent granted, parent is granted, is parent granted, parent
