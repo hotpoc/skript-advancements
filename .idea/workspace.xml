@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a6bc7c7-6ef2-4eee-8daa-c36bd1632b33" name="Changes" comment="Initial Commit" />
+    <list default="true" id="2a6bc7c7-6ef2-4eee-8daa-c36bd1632b33" name="Changes" comment="Initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/SkriptAdvancements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/SkriptAdvancements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$AdvancedBarChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$AdvancedBarChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$AdvancedPie.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$AdvancedPie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$CustomChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$CustomChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$DrilldownPie.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$DrilldownPie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$JsonObjectBuilder$JsonObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$JsonObjectBuilder$JsonObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$JsonObjectBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$JsonObjectBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$MetricsBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$MetricsBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$MultiLineChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$MultiLineChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$SimpleBarChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$SimpleBarChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$SimplePie.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$SimplePie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$SingleLineChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics$SingleLineChart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/bstats/Metrics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/ExprBackgroundFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/ExprBackgroundFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/sections/SecComplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/sections/SecComplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/utils/creation/DisplayBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/utils/creation/DisplayBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/skript-advancements-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/hotpocket/skriptadvancements/elements/types/TypAdvancement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hotpocket/skriptadvancements/elements/types/TypAdvancement.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +36,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="C:\Users\madli\IdeaProjects\skript-advancements1">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="skript-advancements" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,6 +106,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/madli/IdeaProjects/skript-advancements1",
     "project.structure.last.edited": "Project",
@@ -188,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740164755825</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1740165842292</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740165842292</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
