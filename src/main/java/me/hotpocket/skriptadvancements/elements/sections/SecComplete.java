@@ -21,7 +21,7 @@ public class SecComplete extends Section {
 	@Override
 	public boolean init(Expression<?>[] exprs, int matchedPattern, Kleenean isDelayed, SkriptParser.ParseResult parseResult, SectionNode sectionNode, List<TriggerItem> triggerItems) {
 		if (!getParser().isCurrentSection(SecAdvancement.class)) {
-			Skript.error("The advancement complete section needs to be inside of an advancement creation section.");
+			Skript.error("The advancement trigger section needs to be inside of an advancement creation section.");
 			return false;
 		}
 		ParserInstance.Backup backup = getParser().backup();

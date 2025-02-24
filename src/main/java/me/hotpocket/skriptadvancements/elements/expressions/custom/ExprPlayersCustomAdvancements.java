@@ -81,32 +81,43 @@ public class ExprPlayersCustomAdvancements extends SimpleExpression<Advancement>
             switch (mode) {
                 case SET:
                     for (Advancement advancement : CustomUtils.getPlayerAdvancements(player)) {
-                        advancement.revoke(player);
+                        if (!advancement.getAdvancementTab().isDisposed()) {
+                            advancement.revoke(player);
+                        }
                     }
                     advancements = new ArrayList<>(Arrays.asList((Advancement[]) delta));
                     for (Advancement advancement : advancements) {
-                        advancement.grant(player);
+                        if (!advancement.getAdvancementTab().isDisposed()) {
+                            advancement.grant(player);
+                        }
                     }
                     break;
                 case ADD:
                     advancements = new ArrayList<>(Arrays.asList((Advancement[]) delta));
                     for (Advancement advancement : advancements) {
-                        if (!advancement.isGranted(player)) {
+                        if (!advancement.isGranted(player) && !advancement.getAdvancementTab().isDisposed()) {
                             advancement.grant(player);
+                        } else {
+                            // For the completion/trigger section. For some reason using a converter doesn't work because the tab will always be disposed, so here we do another try for getting the advancement.
+                            Advancement tryAdvancement = CustomUtils.getAPI().getAdvancement(advancement.getAdvancementTab().getNamespace(), advancement.getKey().getKey());
+                            if (tryAdvancement != null)
+                                tryAdvancement.grant(player);
                         }
                     }
                     break;
                 case REMOVE:
                     advancements = new ArrayList<>(Arrays.asList((Advancement[]) delta));
                     for (Advancement advancement : advancements) {
-                        if (advancement.isGranted(player)) {
+                        if (advancement.isGranted(player) && !advancement.getAdvancementTab().isDisposed()) {
                             advancement.revoke(player);
                         }
                     }
                     break;
                 case RESET, DELETE:
                     for (Advancement advancement : CustomUtils.getPlayerAdvancements(player)) {
-                        advancement.revoke(player);
+                        if (!advancement.getAdvancementTab().isDisposed()) {
+                            advancement.revoke(player);
+                        }
                     }
                     break;
                 default:
