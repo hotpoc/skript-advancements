@@ -5,62 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6bc7c7-6ef2-4eee-8daa-c36bd1632b33" name="Changes" comment="Fixed empty classes">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/me.hotpocket.skript-advancements.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/skript-advancements.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/skript-advancements.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/custom/CondCustomAnnouncesToChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/custom/CondCustomAnnouncesToChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/custom/CondCustomIsHidden.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/custom/CondCustomIsHidden.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/custom/CondCustomShowsToast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/custom/CondCustomShowsToast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/vanilla/CondAnnouncesToChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/vanilla/CondAnnouncesToChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/vanilla/CondIsHidden.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/vanilla/CondIsHidden.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/vanilla/CondShowsToast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/conditions/vanilla/CondShowsToast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/EffAdvancementToast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/EffAdvancementToast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/EffDisableVanillaAdvancements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/EffDisableVanillaAdvancements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/creation/EffBuildAdvancement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/creation/EffBuildAdvancement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/creation/EffBuildTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/creation/EffBuildTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/custom/EffCustomAdvancementToast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/custom/EffCustomAdvancementToast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/custom/EffCustomToast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/custom/EffCustomToast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/custom/EffDisposeTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/effects/custom/EffDisposeTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementAnnouncement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementAnnouncement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementBackground.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementBackground.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementBackgroundString.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementBackgroundString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementColumn.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementColumn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementDescription.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementIcon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementMaxProgression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementMaxProgression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementParent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementParent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementRoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementRoot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementRow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementTitle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementToast.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementToast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementVisibility.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/creation/ExprAdvancementVisibility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprAllCustomAdvancements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprAllCustomAdvancements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprCustomAdvancement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprCustomAdvancement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprCustomAdvancementProgression.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprCustomAdvancementProgression.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprPlayersCustomAdvancements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprPlayersCustomAdvancements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedDescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedDescription.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedIcon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/custom/ExprCustomDisplayedTitle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/vanilla/ExprDisplayedFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/vanilla/ExprDisplayedFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/vanilla/ExprDisplayedIcon.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/vanilla/ExprDisplayedIcon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/vanilla/ExprDisplayedTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/display/vanilla/ExprDisplayedTitle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprAdvancement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprAdvancement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprAdvancementMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprAdvancementMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprAllVanillaAdvancements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprAllVanillaAdvancements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprDateAwarded.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprDateAwarded.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprPlayersVanillaAdvancements.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/expressions/vanilla/ExprPlayersVanillaAdvancements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/sections/SecAdvancement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/sections/SecAdvancement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/sections/SecAdvancementTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/me/hotpocket/skriptadvancements/elements/sections/SecAdvancementTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprPlayersCustomAdvancements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hotpocket/skriptadvancements/elements/expressions/custom/ExprPlayersCustomAdvancements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/hotpocket/skriptadvancements/elements/sections/SecComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/hotpocket/skriptadvancements/elements/sections/SecComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -130,22 +89,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.skript-advancements build.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/madli/IdeaProjects/skript-advancements1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.skript-advancements build.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/madli/IdeaProjects/skript-advancements1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\madli\IdeaProjects\skript-advancements1\src" />
@@ -158,9 +123,9 @@
     <configuration name="skript-advancements build" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" value="skript-advancements build" />
-        <option name="externalProjectPath" value="C:\Users\madli\IdeaProjects\skript-advancements1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -174,7 +139,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -199,6 +163,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723816028359</updated>
+      <workItem from="1749338090748" duration="635000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1724601331663</created>
@@ -288,6 +253,9 @@
     </task>
     <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
