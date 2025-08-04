@@ -30,7 +30,7 @@ dependencies {
     implementation 'org.jetbrains:annotations:20.1.0'
     compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
     compileOnly 'com.github.SkriptLang:Skript:2.9.5'
-    implementation 'com.frengor:ultimateadvancementapi-shadeable:2.5.1'
+    implementation 'com.frengor:ultimateadvancementapi-shadeable:2.6.0'
 }
 
 def targetJavaVersion = 21
