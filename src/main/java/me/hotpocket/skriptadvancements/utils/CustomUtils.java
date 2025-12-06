@@ -47,7 +47,7 @@ public class CustomUtils {
     public static String getTexture(Material block) {
         if (block.isBlock() && block.isSolid()) {
             if (Skript.methodExists(Material.class, "getTranslationKey")) {
-                return "textures/block/" + block.getTranslationKey().split("minecraft\\.")[1] + ".png";
+                return "textures/block/" + block.getBlockTranslationKey().split("minecraft\\.")[1] + ".png";
             } else {
                 return "textures/block/" + getTranslationKey(block).split("minecraft\\.")[1] + ".png";
             }

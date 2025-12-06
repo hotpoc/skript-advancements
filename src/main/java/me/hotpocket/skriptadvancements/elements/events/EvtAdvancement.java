@@ -4,6 +4,7 @@ import ch.njol.skript.Skript;
 import ch.njol.skript.lang.util.SimpleEvent;
 import ch.njol.skript.registrations.EventValues;
 import ch.njol.skript.util.Getter;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.advancement.Advancement;
 import org.bukkit.entity.Player;
@@ -37,7 +38,7 @@ public class EvtAdvancement extends SimpleEvent {
             @Override
             @Nullable
             public String get(PlayerAdvancementDoneEvent e) {
-                return Bukkit.getUnsafe().legacyComponentSerializer().serialize(e.message());
+                return LegacyComponentSerializer.legacySection().serialize(e.message());
             }
 
         }, 0);

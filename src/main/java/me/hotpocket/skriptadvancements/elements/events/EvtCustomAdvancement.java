@@ -41,13 +41,12 @@ public class EvtCustomAdvancement extends SkriptEvent {
     }
 
     private String @Nullable [] advancements = null;
-    private Literal<String> advancementsLit;
 
     @Override
     public boolean init(Literal<?>[] args, int matchedPattern, SkriptParser.ParseResult parseResult) {
         if (args[0] != null) {
             //noinspection unchecked
-            advancementsLit = ((Literal<String>) args[0]);
+            Literal<String> advancementsLit = ((Literal<String>) args[0]);
             advancements = advancementsLit.getAll();
         }
         return true;

@@ -6,6 +6,7 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.advancement.Advancement;
 import org.bukkit.event.Event;
@@ -23,9 +24,13 @@ public class ExprDisplayedDescription extends SimpleExpression<String> {
 
     @Override
     protected @Nullable String[] get(Event e) {
-        for (Advancement advancement : advancements.getAll(e))
-            if (advancement.getDisplay() != null)
-                return new String[]{Bukkit.getUnsafe().legacyComponentSerializer().serialize(advancement.getDisplay().description())};
+        for (Advancement advancement : advancements.getAll(e)) {
+            if (advancement.getDisplay() != null) {
+                advancement.getDisplay().description();
+                String desc = LegacyComponentSerializer.legacySection().serialize(advancement.getDisplay().description());
+                return new String[]{desc};
+            }
+        }
         return null;
     }
 

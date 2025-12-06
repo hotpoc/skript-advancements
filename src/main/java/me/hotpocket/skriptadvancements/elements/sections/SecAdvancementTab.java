@@ -11,6 +11,7 @@ import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.TriggerItem;
 import ch.njol.util.Kleenean;
 import com.fren_gor.ultimateAdvancementAPI.AdvancementTab;
+import com.fren_gor.ultimateAdvancementAPI.advancement.Advancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.BaseAdvancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.RootAdvancement;
 import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementDisplay;
@@ -18,6 +19,7 @@ import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementFrameT
 import me.hotpocket.skriptadvancements.utils.CustomUtils;
 import org.bukkit.Material;
 import org.bukkit.event.Event;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -34,6 +36,7 @@ public class SecAdvancementTab extends EffectSection {
     public RootAdvancement rootAdvancement;
     private List<BaseAdvancement> advancements = new ArrayList<>();
     private String tabName;
+    private boolean preserveExistingAdvancements = false;
 
     static {
         Skript.registerSection(SecAdvancementTab.class, "create [a[n]] [new] advancement tab named %string%");
@@ -58,20 +61,46 @@ public class SecAdvancementTab extends EffectSection {
 
     @Override
     @Nullable
+
     @SuppressWarnings({"unchecked", "rawtypes"})
     protected TriggerItem walk(Event event) {
         tabName = name.getSingle(event).toLowerCase().replaceAll(" ", "_");
         AdvancementTab tab = CustomUtils.getAPI().getAdvancementTab(tabName);
-        if (tab != null && !tab.isInitialised()) {
-            RootAdvancement root = new RootAdvancement(tab, "temp_root_advancement_name_1289587", new AdvancementDisplay(Material.DIAMOND, "title", AdvancementFrameType.TASK, false, false, 0, 0, "description"), CustomUtils.getTexture(Material.DIAMOND_BLOCK));
-            BaseAdvancement tempBase = new BaseAdvancement("name1", new AdvancementDisplay(Material.DIAMOND, "title", AdvancementFrameType.TASK, false, false, 0, 0, "description"), root);
-            tab.registerAdvancements(root, tempBase);
-            CustomUtils.getAPI().unregisterAdvancementTab(tabName);
+        
+        // If preserving existing advancements, don't unregister
+        if (preserveExistingAdvancements) {
+            // Tab already exists with advancements, reuse it
+            if (tab == null) {
+                // Tab doesn't exist yet, create it
+                tab = CustomUtils.getAPI().createAdvancementTab(tabName);
+            }
+            // Keep existing advancements, just get root if available
+            for (@NotNull Advancement advancement : tab.getAdvancements()) {
+                if (advancement instanceof RootAdvancement) {
+                    rootAdvancement = (RootAdvancement) advancement;
+                    break;
+                }
+            }
+            // If no root found, create a temp one
+            if (rootAdvancement == null) {
+                rootAdvancement = new RootAdvancement(tab, "temp_root_advancement_name_1289587",
+                    new AdvancementDisplay(Material.DIAMOND, "title", AdvancementFrameType.TASK, false, false, 0, 0, "description"),
+                    CustomUtils.getTexture(Material.DIAMOND_BLOCK));
+            }
+        } else {
+            // Original behavior: clear and recreate
+            if (tab != null && !tab.isInitialised()) {
+                RootAdvancement root = new RootAdvancement(tab, "temp_root_advancement_name_1289587", new AdvancementDisplay(Material.DIAMOND, "title", AdvancementFrameType.TASK, false, false, 0, 0, "description"), CustomUtils.getTexture(Material.DIAMOND_BLOCK));
+                BaseAdvancement tempBase = new BaseAdvancement("name1", new AdvancementDisplay(Material.DIAMOND, "title", AdvancementFrameType.TASK, false, false, 0, 0, "description"), root);
+                tab.registerAdvancements(root, tempBase);
+                CustomUtils.getAPI().unregisterAdvancementTab(tabName);
+            }
+            if (tab != null && (tab.isInitialised() || tab.isActive())) {
+                CustomUtils.getAPI().unregisterAdvancementTab(tabName);
+            }
+            CustomUtils.getAPI().createAdvancementTab(tabName);
         }
-        if (tab != null && (tab.isInitialised() || tab.isActive())) {
-            CustomUtils.getAPI().unregisterAdvancementTab(tabName);
-        }
-        CustomUtils.getAPI().createAdvancementTab(tabName);
+        
         getParser().getCurrentSections().add(this);
         return walk(event, true);
     }
@@ -101,5 +130,13 @@ public class SecAdvancementTab extends EffectSection {
 
     public String getTabName() {
         return tabName;
+    }
+
+    public void setPreserveExistingAdvancements(boolean preserve) {
+        this.preserveExistingAdvancements = preserve;
+    }
+
+    public boolean isPreservingAdvancements() {
+        return preserveExistingAdvancements;
     }
 }

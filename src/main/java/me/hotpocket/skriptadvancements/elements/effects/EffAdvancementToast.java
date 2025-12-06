@@ -11,6 +11,8 @@ import ch.njol.skript.lang.SkriptParser;
 import ch.njol.util.Kleenean;
 import com.fren_gor.ultimateAdvancementAPI.advancement.display.AdvancementFrameType;
 import me.hotpocket.skriptadvancements.utils.CustomUtils;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.advancement.Advancement;
 import org.bukkit.entity.Player;
@@ -36,10 +38,20 @@ public class EffAdvancementToast extends Effect {
 
     @Override
     protected void execute(Event e) {
-        for (Advancement advancement : advancements.getAll(e))
-            for (Player player : players.getAll(e))
-                if (advancement.getDisplay() != null)
-                    CustomUtils.getAPI().displayCustomToast(player, advancement.getDisplay().icon(), Bukkit.getUnsafe().legacyComponentSerializer().serialize(advancement.getDisplay().title()), AdvancementFrameType.valueOf(advancement.getDisplay().frame().name()));
+        for (Advancement advancement : advancements.getAll(e)) {
+            for (Player player : players.getAll(e)) {
+                if (advancement.getDisplay() != null) {
+                    Component titleComp = advancement.getDisplay().title();
+                    String title = LegacyComponentSerializer.legacySection().serialize(titleComp);
+                    CustomUtils.getAPI().displayCustomToast(
+                            player,
+                            advancement.getDisplay().icon(),
+                            title,
+                            AdvancementFrameType.valueOf(advancement.getDisplay().frame().name())
+                    );
+                }
+            }
+        }
     }
 
     @Override

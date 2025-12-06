@@ -10,6 +10,8 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.advancement.Advancement;
 import org.bukkit.event.Event;
@@ -32,9 +34,13 @@ public class ExprDisplayedTitle extends SimpleExpression<String> {
 
     @Override
     protected @Nullable String[] get(Event e) {
-        for (Advancement advancement : advancements.getAll(e))
-            if (advancement.getDisplay() != null)
-                return new String[]{Bukkit.getUnsafe().legacyComponentSerializer().serialize(advancement.getDisplay().title())};
+        for (Advancement advancement : advancements.getAll(e)) {
+            if (advancement.getDisplay() != null) {
+                Component titleComp = advancement.getDisplay().title();
+                String title = LegacyComponentSerializer.legacySection().serialize(titleComp);
+                return new String[]{title};
+            }
+        }
         return null;
     }
 

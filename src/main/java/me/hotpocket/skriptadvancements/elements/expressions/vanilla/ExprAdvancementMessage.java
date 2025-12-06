@@ -10,6 +10,7 @@ import ch.njol.skript.expressions.base.EventValueExpression;
 import ch.njol.skript.lang.ExpressionType;
 import ch.njol.util.coll.CollectionUtils;
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Event;
 import org.bukkit.event.player.PlayerAdvancementDoneEvent;
@@ -56,7 +57,7 @@ public class ExprAdvancementMessage extends EventValueExpression<String> {
     @Nullable
     protected String[] get(Event e) {
         PlayerAdvancementDoneEvent event = (PlayerAdvancementDoneEvent) e;
-        return new String[]{Bukkit.getUnsafe().legacyComponentSerializer().serialize(event.message())};
+        return new String[]{LegacyComponentSerializer.legacySection().serialize(event.message())};
     }
 
     @Override
